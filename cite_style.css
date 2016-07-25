@@ -4,8 +4,8 @@
     font-family: '微软雅黑 Light';
 }
 body{
-    background:url("./imgs/main_bg.png") no-repeat;
     z-index: -1;
+    background:url("./imgs/main_bg.png") no-repeat;
     background-attachment: fixed;
     overflow-y: visible;
 }
@@ -13,33 +13,33 @@ body{
     height: 100%;
 }
 .head{
+    position: fixed;
     height: 100px;
     width: 100%;
-    position: fixed;
-    top:0px;
+    top:0;
     left:0;
     padding:0;
     z-index: 10;
     opacity:1;
 }
 .content{
+    height:500px;
+    width:100%;
     position: absolute;
     top:0;
     left:0;
-    height:500px;
-    width:100%;
 }
 .head_left{
     height: 80px;
     width:20%;
     float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
     text-indent: 1em;
     color: #fff;
     font-size: 40px;
     line-height: 80px;
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
     border-left:3px solid #fff;
     border-bottom-left-radius: 50%;
     border-top-left-radius: 50%;
@@ -57,32 +57,32 @@ body{
     font-size: 20px;
 }
 .form-control{
+    height:25px;
     border-radius: 15px;
     background-color: #8c8c8c;
     color:#89bdff;
-    height:25px;
 }
 .btn{
+    height:25px;
     border-radius: 15px;
     color: #2aabd2;
-    height:25px;
     line-height:12px;
 }
 .intro_center{
+    width: 300px;
+    height: 180px;
     position: absolute;
     top: 70%;
     left: 50%;
-    color: white;
     margin-left: -150px;
-    width: 300px;
-    height: 180px;
+    color: white;
     font-size: 35px;
     line-height: 80px;
     text-align: center;
     border-top: 3px solid white;
     border-bottom: 3px solid white;
-    z-index: 9;
     cursor: pointer;
+    z-index: 9;
 }
 .intro_center:hover{
     -webkit-animation:jump 0.5s ease;
@@ -101,25 +101,26 @@ body{
     width: 100%;
 }
 .c2011 img{
-    margin-left:50px;
     height: 80%;
+    margin-left:50px;
 }
 .c2011 h2{
     color: #fff;
     font-weight: bold;
 }
 .c2011 p{
-    float: right;
-    color: #337ab7;
     width: 45%;
-    font-size: 20px;
-    text-indent: 2em;
+    float: right;
+    margin-top: 40px;
     margin-right: 50px;
+    color: #ddd;
+    font-size: 20px;
+    letter-spacing: 2px;
 }
 .c2015 img{
-    margin-right:50px;
-    float: right;
     height: 80%;
+    float: right;
+    margin-right:50px;
 }
 .c2015 h2{
     color: #fff;
@@ -127,19 +128,20 @@ body{
     font-weight: bold;
 }
 .c2015 p{
-    float: right;
-    color: #337ab7;
     width: 45%;
-    text-indent: 2em;
-    font-size: 20px;
+    float: right;
+    margin-top: 40px;
     margin-right: 50px;
+    color: #ddd;
+    font-size: 20px;
+    letter-spacing: 2px;
 }
 .glass{
+    height: 100%;
+    width: 100%;
     position: absolute;
     top:0;
     left:0;
-    height: 100%;
-    width: 100%;
     background: #000;
     z-index: -1;
     opacity: 0.7;
@@ -148,13 +150,13 @@ body{
 .toTop{
     height:60px;
     width: 60px;
-    background-color: #009cff;
     position: fixed;
+    bottom:10px;
+    right:10px;
+    background-color: #009cff;
     line-height:30px;
     text-align: center;
     color: white;
-    bottom:10px;
-    right:10px;
     display: none;
     cursor: pointer;
     border:2px solid #fff;
